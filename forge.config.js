@@ -1,0 +1,15 @@
+module.exports = {
+  packagerConfig: {
+    asar: true,
+  },
+  makers: [
+    {
+      name: "@electron-forge/maker-squirrel",
+      config: {
+        name: "smart_restaurant_desktop",
+        setupExe: "SmartRestaurantDesktopSetup.exe",
+        noMsi: true
+      }
+    }
+  ]
+};

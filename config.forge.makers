@@ -1,0 +1,26 @@
+"config": {
+  "forge": {
+    "packagerConfig": {
+      "icon": "assets/app-icon.ico",
+      "overwrite": true
+    },
+    "makers": [
+      {
+        "name": "@electron-forge/maker-squirrel",
+        "platforms": ["win32"],
+        "config": {
+          "name": "smart_restaurant_desktop",
+          "authors": "Smart Restaurant",
+          "exe": "smart-restaurant-desktop.exe",
+          "setupIcon": "assets/app-icon.ico",
+          "setupMsi": false,
+          "noMsi": true
+        }
+      },
+      {
+        "name": "@electron-forge/maker-zip",
+        "platforms": ["win32"]
+      }
+    ]
+  }
+}
